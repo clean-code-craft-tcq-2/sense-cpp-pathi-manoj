@@ -11,6 +11,7 @@ namespace Statistics {
 }
 
 class IAlerter{
+    public:
     virtual ~IAlerter() {}
 };
 
