@@ -31,5 +31,5 @@ class StatsAlerter
     _alerts = &alerts;
     }
     
-    void checkAndAlert((const std::vector<float>& statsData ) ; 
+    void checkAndAlert(const std::vector<float>& statsData ) ; 
 };
