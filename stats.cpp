@@ -30,6 +30,9 @@ void StatsAlerter::checkAndAlert(const std::vector<float>& statsData )
   float maxValue = *max_element( statsData.begin(), statsData.end());
   if(maxValue > _maxThreshold) 
   {
-    //update email alert and led alert to true ;
+    for( int i = 0 ; i < _alerts.size() ; i++ ) 
+    {
+      _alerts[i]->
+    }
   }
 }
