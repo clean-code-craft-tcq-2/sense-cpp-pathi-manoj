@@ -19,7 +19,7 @@ class EmailAlert:IAlerter{
 class LEDAlert:IAlerter{
     bool ledGlows;
 };
-class StatsAlerter:
+class StatsAlerter
 {
     private:
     float _maxThreshold;
