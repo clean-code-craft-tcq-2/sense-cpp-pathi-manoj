@@ -4,6 +4,7 @@
 #include "stats.h"
 
 #include <cmath>
+using namespace std;
 
 TEST_CASE("reports average, minimum and maximum") {
     auto computedStats = Statistics::ComputeStatistics({1.5, 8.9, 3.2, 4.5});
@@ -20,6 +21,9 @@ TEST_CASE("average is NaN for empty array") {
     
     //Design the REQUIRE statement here.
     //Use http://www.cplusplus.com/reference/cmath/isnan/
+    REQUIRE(std::isnan(computedStats.average));
+    REQUIRE(std::isnan(computedStats.max));
+    REQUIRE(std::isnan(computedStats.min));
 }
 
 TEST_CASE("raises alerts when max is greater than threshold") {
