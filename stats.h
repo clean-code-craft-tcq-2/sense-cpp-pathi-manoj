@@ -12,16 +12,4 @@ namespace Statistics {
 
 class IAlerter 
 {
-    public: 
-    IAlerter();
-    
-    struct EmailAlert 
-    {
-    bool emailSent ;
-    };
-
-    struct LEDAlert 
-    {
-    bool ledGlows ;
-    };
 };
