@@ -27,7 +27,8 @@ class StatsAlerter
     float _maxThreshold;
     std::vector<IAlerter*> _alerts;
     
-    StatsAlerter( const float maxThreshold , std::vector<IAlerter> &alerts) 
+    public:
+    StatsAlerter( const float maxThreshold , std::vector<IAlerter*> &alerts) 
     {
     _maxThreshold = maxThreshold;
     _alerts = &alerts;
