@@ -20,7 +20,7 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& statsData ) {
     else {
         s.min = *min_element( statsData.begin(), statsData.end());
         s.max = *max_element( statsData.begin(), statsData.end());
-        s.average = std::accumulate( statsData.begin(), statsData.end()) / statsData.size());  
+        s.average = std::accumulate( statsData.begin(), statsData.end(),0.0) / statsData.size();  
       return s;
     }
 }
