@@ -33,8 +33,8 @@ class StatsAlerter
     StatsAlerter( const float maxThreshold , std::vector<IAlerter*> alerts) 
     {
     _maxThreshold = maxThreshold;
-    _emailAlert = alerts.begin();
-    _ledAlert = alerts.end();
+    _emailAlert = dynamic_cast<EmailAlert*>(&alerts[0]);
+    _ledAlert = dynamic_cast<LEDAlert*>(&alerts[1]);
     }
     
     void checkAndAlert(const std::vector<float>& statsData ) ; 
