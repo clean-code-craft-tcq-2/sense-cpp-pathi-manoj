@@ -30,7 +30,7 @@ class StatsAlerter
     LEDAlert* _ledAlert;
     
     public:
-    StatsAlerter( const float maxThreshold , std::vector<IAlerter*> &alerts) 
+    StatsAlerter( const float maxThreshold , std::vector<IAlerter*> alerts) 
     {
     _maxThreshold = maxThreshold;
     _emailAlert = alerts.begin();
