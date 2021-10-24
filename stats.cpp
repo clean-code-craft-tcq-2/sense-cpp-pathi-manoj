@@ -24,3 +24,12 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& statsData ) {
       return s;
     }
 }
+
+void StatsAlerter::checkAndAlert(const std::vector<float>& statsData )
+{
+  float maxValue = *max_element( statsData.begin(), statsData.end());
+  if(maxValue > maxThreshold) 
+  {
+    
+  }
+}
