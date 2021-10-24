@@ -26,12 +26,15 @@ class StatsAlerter
     private:
     float _maxThreshold;
     std::vector<IAlerter*> _alerts;
+    EmailAlert* _emailAlert;
+    LEDAlert* _ledAlert;
     
     public:
     StatsAlerter( const float maxThreshold , std::vector<IAlerter*> &alerts) 
     {
     _maxThreshold = maxThreshold;
-    _alerts = alerts;
+    _emailAlert = alerts[0];
+    _ledAlert = alerts[1];
     }
     
     void checkAndAlert(const std::vector<float>& statsData ) ; 
