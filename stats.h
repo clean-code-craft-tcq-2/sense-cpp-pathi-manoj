@@ -27,7 +27,6 @@ class StatsAlerter
 {
     private:
     float _maxThreshold;
-    std::vector<IAlerter*> _alerts;
     EmailAlert* _emailAlert;
     LEDAlert* _ledAlert;
     
