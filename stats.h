@@ -13,11 +13,11 @@ namespace Statistics {
 class IAlerter{
 };
 
-class EmailAlert:IAlerter{
+class EmailAlert:public IAlerter{
     public:
     bool emailSent;
 };
-class LEDAlert:IAlerter{
+class LEDAlert:public IAlerter{
     public:
     bool ledGlows;
 };
@@ -31,7 +31,7 @@ class StatsAlerter
     StatsAlerter( const float maxThreshold , std::vector<IAlerter*> &alerts) 
     {
     _maxThreshold = maxThreshold;
-    _alerts = &alerts;
+    _alerts = alerts;
     }
     
     void checkAndAlert(const std::vector<float>& statsData ) ; 
