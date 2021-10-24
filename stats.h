@@ -14,9 +14,11 @@ class IAlerter{
 };
 
 class EmailAlert:IAlerter{
+    public:
     bool emailSent;
 };
 class LEDAlert:IAlerter{
+    public:
     bool ledGlows;
 };
 class StatsAlerter
