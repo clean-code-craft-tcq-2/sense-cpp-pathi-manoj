@@ -10,6 +10,9 @@ namespace Statistics {
     Stats ComputeStatistics(const std::vector<float>& statsData );
 }
 
-class IAlerter 
+class StatsAlerter
 {
+    private:
+    StatsAlerter( const float maxThreshold , std::vector<IAlerter> &alerts) {};
+    checkAndAlert((const std::vector<float>& statsData ) ; 
 };
