@@ -28,8 +28,8 @@ Stats Statistics::ComputeStatistics(const std::vector<float>& statsData ) {
 void StatsAlerter::checkAndAlert(const std::vector<float>& statsData )
 {
   float maxValue = *max_element( statsData.begin(), statsData.end());
-  if(maxValue > maxThreshold) 
+  if(maxValue > _maxThreshold) 
   {
-    
+    //update email alert and led alert to true ;
   }
 }
